@@ -346,7 +346,7 @@ ccui.RichText = ccui.Widget.extend(/** @lends ccui.RichText# */{
             var stringLength = curText.length;
             var leftLength = stringLength * (1 - overstepPercent);
             var leftWords = curText.substr(0, leftLength);
-            var cutWords = curText.substr(leftLength, curText.length - 1);
+            var cutWords = curText.substr(leftLength, curText.length );
             var validLeftLength = leftLength > 0;
 
             if(this._lineBreakOnSpace){
